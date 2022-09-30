@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-width: 480px;
+  background-color: pink;
+}
+
+.app {
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+}
+
+.counter__result{
+  font-size: 200px;
+  
+}
+
+.counter {
+  margin-bottom: 15px;
+ 
+  // .counter__buttons
+  &__buttons {
+    display: flex;
+    gap: 40px;
+    
+  }
+
+  // .counter__btn-plus
+  &__btn-plus {
+    background-color: green;
+  }
+
+  // .counter__btn-minus
+  &__btn-minus {
+    background-color: red;
+  }
+}
+
+.counter__btn-plus,
+.counter__btn-minus{
+  width: 300px;
+  height: 80px;
+  font-size: 40px;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
